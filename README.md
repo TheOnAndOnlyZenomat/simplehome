@@ -10,7 +10,11 @@ For this to work, you need the rss-parser from rbren. You can get it here: https
 ## Screenshot
 ![](img/2020-07-10-213727_1919x1079_scrot.png)
 
-Here you can see how it looks
+here without rss feed
+
+![](img/2020-07-10-221705_1919x1079_scrot.png)
+
+here with rss feed
 
 ## Functionality
 As you notices on the screenshot, there is a text called "RSS" under the image. If you click on this text, it will toggle the RSS feed on the left side. <br>
