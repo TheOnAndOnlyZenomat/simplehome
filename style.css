@@ -111,16 +111,12 @@ li:first-child {
     top:10%;
     bottom:10%;
     width: 20%;
-    /*display: block;*/
-    /*display: none;*/
     overflow-y: auto;
     text-overflow: clip;
     scrollbar-width: none;
     scrollbar-color: rgba(255, 255, 255, 0.233) rgba(0, 0, 0, 0);
-    /*background-color: #272727;*/
     font-family: 'Roboto Mono';
     padding: 1em;
-    /*box-shadow: 5px 10px #3b3a3a;*/
     border: 1px;
     border-style: solid;
     border-color: var(--border);
@@ -138,7 +134,6 @@ li:first-child {
     line-height: 100%;
     color: var(--fg);
     text-decoration: none;
-    /*font: 18px "Gothic", Courier, monospace;*/
     font-family: gidole;
     font-size: 18px;
     font-weight: bold;
