@@ -93,18 +93,20 @@ function showrss() {
     }
 }
 
-function darklight() {
+function darklight(theme) {
     let root = document.documentElement;
 
-    if (getComputedStyle(document.documentElement)
-        .getPropertyValue('--bg') === "#272727") {
-            root.style.setProperty("--bg", "#ffffff");
-            root.style.setProperty("--fg", "#272727");
-            root.style.setProperty("--border", "#313131")
+    if (window.getComputedStyle(document.documentElement).getPropertyValue('--bg') !== "#ffffff") {
+        console.log("dark")
+        root.style.setProperty("--bg", "#ffffff");
+        root.style.setProperty("--fg", "#272727");
+        root.style.setProperty("--border", "#313131")
+        theme = "light"
         }
     else {
-    root.style.setProperty("--bg", "#181a1b");
-    root.style.setProperty("--fg", "#ffffff");
-    root.style.setProperty("--border", "#ffffff")
+        console.log("light")
+        root.style.setProperty("--bg", "#181a1b");
+        root.style.setProperty("--fg", "#ffffff");
+        root.style.setProperty("--border", "#ffffff")
     }
 }
