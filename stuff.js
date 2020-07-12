@@ -103,7 +103,7 @@ function darklight() {
             root.style.setProperty("--border", "#313131")
         }
     else {
-    root.style.setProperty("--bg", "#272727");
+    root.style.setProperty("--bg", "#181a1b");
     root.style.setProperty("--fg", "#ffffff");
     root.style.setProperty("--border", "#ffffff")
     }
