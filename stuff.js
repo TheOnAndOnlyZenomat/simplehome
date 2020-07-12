@@ -93,20 +93,41 @@ function showrss() {
     }
 }
 
-function darklight(theme) {
+function light() {
     let root = document.documentElement;
+    console.log("light")
+    root.style.setProperty("--bg", "#ffffff");
+    root.style.setProperty("--fg", "#272727");
+    root.style.setProperty("--border", "#313131");
+    theme = "light";
+}
 
+function dark() {
+    let root = document.documentElement;
+    console.log("dark")
+    root.style.setProperty("--bg", "#181a1b");
+    root.style.setProperty("--fg", "#ffffff");
+    root.style.setProperty("--border", "#ffffff");
+    theme = "dark";
+}
+
+function darklight() {
+    let root = document.documentElement;
     if (window.getComputedStyle(document.documentElement).getPropertyValue('--bg') !== "#ffffff") {
-        console.log("dark")
-        root.style.setProperty("--bg", "#ffffff");
-        root.style.setProperty("--fg", "#272727");
-        root.style.setProperty("--border", "#313131")
-        theme = "light"
+        light();
         }
     else {
-        console.log("light")
-        root.style.setProperty("--bg", "#181a1b");
-        root.style.setProperty("--fg", "#ffffff");
-        root.style.setProperty("--border", "#ffffff")
+        dark();
+    }
+}
+
+window.onload = () => {
+    curtime = getTime().split(":");
+    curtime = Number(curtime);
+    if (curtime >= 10 && curtime <= 20) {
+        light();
+    }
+    else {
+        dark();
     }
 }
