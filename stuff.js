@@ -92,3 +92,19 @@ function showrss() {
         x.style.display = "none";
     }
 }
+
+function darklight() {
+    let root = document.documentElement;
+
+    if (getComputedStyle(document.documentElement)
+        .getPropertyValue('--bg') === "#272727") {
+            root.style.setProperty("--bg", "#ffffff");
+            root.style.setProperty("--fg", "#272727");
+            root.style.setProperty("--border", "#313131")
+        }
+    else {
+    root.style.setProperty("--bg", "#272727");
+    root.style.setProperty("--fg", "#ffffff");
+    root.style.setProperty("--border", "#ffffff")
+    }
+}
