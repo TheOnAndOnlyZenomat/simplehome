@@ -123,8 +123,8 @@ function darklight() {
 
 window.onload = () => {
     curtime = getTime().split(":");
-    curtime = Number(curtime);
-    if (curtime >= 10 && curtime <= 20) {
+    hour = Number(curtime[0]);
+    if (hour >= 8 && hour <= 20) {
         light();
     }
     else {
