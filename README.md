@@ -8,14 +8,22 @@ If you have any questions, hit me up on reddit (https://www.reddit.com/user/Stri
 For this to work, you need the rss-parser from rbren. You can get it here: https://github.com/rbren/rss-parser.
 
 ## Screenshot
-![](img/2020-07-10-213727_1919x1079_scrot.png)
+### Light
+without RSS
+![](img/2020-07-13-115437_1919x1079_scrot.png)
 
-here without rss feed
+with RSS
+![](img/2020-07-13-115429_1919x1079_scrot.png)
 
-![](img/2020-07-10-221705_1919x1079_scrot.png)
+### Dark
+without RSS
+![](img/2020-07-13-115444_1919x1079_scrot.png)
 
-here with rss feed
+with RSS
+![](img/2020-07-13-115421_1919x1079_scrot.png)
 
 ## Functionality
-As you notices on the screenshot, there is a text called "RSS" under the image. If you click on this text, it will toggle the RSS feed on the left side. <br>
+* toogle the rss feed with a button (the "rss" text under the image)
+* switch between light and dark theme with a button (the "theme" text ontop of the image)
+* dynamic light or darkmode depending on time (8am to 8pm is lightmode, 8pm to 8am darkmode)
 Also: The code for showing a clock,the weather and performing a search is there, but not implemented, because of the simplicity <br>
