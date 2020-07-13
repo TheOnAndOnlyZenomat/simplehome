@@ -26,4 +26,5 @@ with RSS
 * toogle the rss feed with a button (the "rss" text under the image)
 * switch between light and dark theme with a button (the "theme" text ontop of the image)
 * dynamic light or darkmode depending on time (8am to 8pm is lightmode, 8pm to 8am darkmode)
+
 Also: The code for showing a clock,the weather and performing a search is there, but not implemented, because of the simplicity <br>
