@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="Webserver_Logo.png" rel="shortcut icon" type="image/x-icon" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="rss-parser/dist/rss-parser.min.js"></script>
-    <script src="stuff.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="Webserver_Logo.png" rel="shortcut icon" type="image/x-icon" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="rss-parser/dist/rss-parser.min.js"></script>
+        <script src="stuff.js"></script>
+    </head>
 
-<body>
-    <nav>
-        <h1>adrsrv@home: / #</h1>
-        <ul class="a">
-            <div class="bookmark-in">
-                <li>Daily</li>
-                <li><a class="bookmark" href="https://inbox.google.com/">Inbox</a></li>
-                <li><a class="bookmark" href="https://github.com/">Github</a></li>
-            </div>
-        </ul>
-        <ul class="b">
-            <div class="bookmark-in">
-                <li>Media</li>
-                <li><a class="bookmark" href="https://youtube.com">Youtube</a></li>
-                <li><a class="bookmark" href="https://netflix.com">Netflix</a></li>
-                <li><a class="bookmark" href="https://twitch.com">Twitch</a></li>
-            </div>
-        </ul>
-        <ul class="c">
-            <div class="bookmark-in">
-                <li>Social Media</li>
-                <li><a class="bookmark" href="https://twitter.com">Twitter</a></li>
-                <li><a class="bookmark" href="https://devrant.com">DevRant</a></li>
-                <li><a class="bookmark" href="https://fosstodon.org">Mastodon</a></li>
-            </div>
-        </ul>
-        <ul class="d">
-            <div class="bookmark-in">
-                <li><a class="bookmark" href="https://reddit.com">Reddit</a></li>
-                <li><a class="bookmark" href="https://reddit.com/r/unixporn">/r/unixporn</a></li>
-                <li><a class="bookmark" href="https://reddit.com/r/UsabilityPorn">/r/UsablilityPorn</a></li>
-                <li><a class="bookmark" href="https://reddit.com/r/selfhosted">/r/selfhosted</a></li>
-                <li><a class="bookmark" href="https://reddit.com/r/askreddit">/r/askreddit</a></li>
-                <li><a class="bookmark" href="https://reddit.com/r/news">/r/news</a></li>
-            </div>
-        </ul>
-    </nav>
+    <body>
+        <nav>
+            <h1>adrsrv@home: / #</h1>
+            <ul class="a">
+                <div class="bookmark-in">
+                    <li>Daily</li>
+                    <li><a class="bookmark" href="https://inbox.google.com/">Inbox</a></li>
+                    <li><a class="bookmark" href="https://github.com/">Github</a></li>
+                </div>
+            </ul>
+            <ul class="b">
+                <div class="bookmark-in">
+                    <li>Media</li>
+                    <li><a class="bookmark" href="https://youtube.com">Youtube</a></li>
+                    <li><a class="bookmark" href="https://netflix.com">Netflix</a></li>
+                    <li><a class="bookmark" href="https://twitch.com">Twitch</a></li>
+                </div>
+            </ul>
+            <ul class="c">
+                <div class="bookmark-in">
+                    <li>Social Media</li>
+                    <li><a class="bookmark" href="https://twitter.com">Twitter</a></li>
+                    <li><a class="bookmark" href="https://devrant.com">DevRant</a></li>
+                    <li><a class="bookmark" href="https://fosstodon.org">Mastodon</a></li>
+                </div>
+            </ul>
+            <ul class="d">
+                <div class="bookmark-in">
+                    <li><a class="bookmark" href="https://reddit.com">Reddit</a></li>
+                    <li><a class="bookmark" href="https://reddit.com/r/unixporn">/r/unixporn</a></li>
+                    <li><a class="bookmark" href="https://reddit.com/r/UsabilityPorn">/r/UsablilityPorn</a></li>
+                    <li><a class="bookmark" href="https://reddit.com/r/selfhosted">/r/selfhosted</a></li>
+                    <li><a class="bookmark" href="https://reddit.com/r/askreddit">/r/askreddit</a></li>
+                    <li><a class="bookmark" href="https://reddit.com/r/news">/r/news</a></li>
+                </div>
+            </ul>
+        </nav>
 
-    <div class="rss1" id='rss1' style="display: none;">
-        <p class="w3-text-white"><span id="rss_title"></span></p>
-        <p class="w3-text-white"><span id="rss_content"></span></p>
-        <p class="w3-text-white"><span id="rss_time"></span></p>
-    </div>
+        <div class="rss1" id='rss1' style="display: none;">
+            <p class="w3-text-white"><span id="rss_title"></span></p>
+            <p class="w3-text-white"><span id="rss_content"></span></p>
+            <p class="w3-text-white"><span id="rss_time"></span></p>
+        </div>
 
-    <div class="img_and_toggle">
-        <p class="button_theme" onclick="darklight()">theme</p>
-        <img src="pineapple-supply-co-jIU6rQccJAU-unsplash.jpg">
-        <p class="button" onclick="showrss()">rss</p>
-    </div>
-</body>
+        <div class="img_and_toggle">
+            <p class="button_theme" onclick="darklight()">theme</p>
+            <img src="pineapple-supply-co-jIU6rQccJAU-unsplash.jpg">
+            <p class="button" onclick="showrss()">rss</p>
+        </div>
+    </body>
 </html>
