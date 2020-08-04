@@ -49,6 +49,21 @@ document.getElementById('rss1').style.display = '';
     }
 });
 
+function pushcontent(content, feed, articlecount) {
+    //checks for the amount of articles to fetch
+    if (articlecount === 'all') {
+        feed.items.forEach(function(entry) {
+            content.push('<a class=rss_title href="' + entry.link +'">' + entry.title + '</a>' + '<p class=rss_text>'+ entry.content + '</p>' + '<p class=rss_time>'+ entry.isoDate + '</p>')
+        });
+    }
+    else {
+        for (i=0; i < articlecount; i++) {
+            content.push('<a class=rss_title href="' + feed.items[i].link +'">' + feed.items[i].title + '</a>' + '<p class=rss_text>'+ feed.items[i].content + '</p>' + '<p class=rss_time>'+ feed.items[i].isoDate + '</p>')
+        }
+    }
+    return content;
+}
+
 function rss() {
     // Note: some RSS feeds can't be loaded in the browser due to CORS security.
     // To get around this, you can use a proxy.
@@ -58,9 +73,8 @@ function rss() {
     if (err) throw err;
     const title = feed.title
     let content = []
-    feed.items.forEach(function(entry) {
-        content.push('<a class=rss_title href="' + entry.link +'">' + entry.title + '</a>' + '<p class=rss_text>'+ entry.content + '</p>' + '<p class=rss_time>'+ entry.isoDate + '</p>')
-    })
+    articlecount = 'all' //change this line to determine how many articles should be rendered. Set to 'all' if you want to render all articles
+    content = pushcontent(content, feed, articlecount)  //this fetches the content, see function for further comments
     content.toString();
     document.getElementById('rss_title').innerHTML = title;
     document.getElementById('rss_content').innerHTML = content.join("\n");
